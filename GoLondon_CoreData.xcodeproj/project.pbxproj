@@ -8,11 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		E2CD122E28FF4A9C008CCD2D /* GoLondon_CoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = E2CD122D28FF4A9C008CCD2D /* GoLondon_CoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2CD123D28FF4AB4008CCD2D /* DBScheduleEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD123428FF4AB3008CCD2D /* DBScheduleEntry+CoreDataProperties.swift */; };
+		E2CD123E28FF4AB4008CCD2D /* DBScheduleEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD123528FF4AB3008CCD2D /* DBScheduleEntry+CoreDataClass.swift */; };
+		E2CD123F28FF4AB4008CCD2D /* DBTimetable+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD123628FF4AB3008CCD2D /* DBTimetable+CoreDataProperties.swift */; };
+		E2CD124028FF4AB4008CCD2D /* DBTimetable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD123728FF4AB3008CCD2D /* DBTimetable+CoreDataClass.swift */; };
+		E2CD124128FF4AB4008CCD2D /* DBTimetableSchedule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD123828FF4AB4008CCD2D /* DBTimetableSchedule+CoreDataClass.swift */; };
+		E2CD124228FF4AB4008CCD2D /* DBTimetableSchedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD123928FF4AB4008CCD2D /* DBTimetableSchedule+CoreDataProperties.swift */; };
+		E2CD124328FF4AB4008CCD2D /* GoLondon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2CD123A28FF4AB4008CCD2D /* GoLondon.xcdatamodeld */; };
+		E2CD124428FF4AB4008CCD2D /* DBConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD123C28FF4AB4008CCD2D /* DBConverter.swift */; };
+		E2CD124728FF4B22008CCD2D /* GoLondonSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E2CD124628FF4B22008CCD2D /* GoLondonSDK */; };
+		E2CD124928FF4C9F008CCD2D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD124828FF4C9E008CCD2D /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2CD122A28FF4A9C008CCD2D /* GoLondon_CoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoLondon_CoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CD122D28FF4A9C008CCD2D /* GoLondon_CoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoLondon_CoreData.h; sourceTree = "<group>"; };
+		E2CD123428FF4AB3008CCD2D /* DBScheduleEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DBScheduleEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E2CD123528FF4AB3008CCD2D /* DBScheduleEntry+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DBScheduleEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E2CD123628FF4AB3008CCD2D /* DBTimetable+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DBTimetable+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E2CD123728FF4AB3008CCD2D /* DBTimetable+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DBTimetable+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E2CD123828FF4AB4008CCD2D /* DBTimetableSchedule+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DBTimetableSchedule+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E2CD123928FF4AB4008CCD2D /* DBTimetableSchedule+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DBTimetableSchedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E2CD123B28FF4AB4008CCD2D /* GoLondon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoLondon.xcdatamodel; sourceTree = "<group>"; };
+		E2CD123C28FF4AB4008CCD2D /* DBConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBConverter.swift; sourceTree = "<group>"; };
+		E2CD124828FF4C9E008CCD2D /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CD124728FF4B22008CCD2D /* GoLondonSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +65,16 @@
 		E2CD122C28FF4A9C008CCD2D /* GoLondon_CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				E2CD124828FF4C9E008CCD2D /* Persistence.swift */,
 				E2CD122D28FF4A9C008CCD2D /* GoLondon_CoreData.h */,
+				E2CD123C28FF4AB4008CCD2D /* DBConverter.swift */,
+				E2CD123528FF4AB3008CCD2D /* DBScheduleEntry+CoreDataClass.swift */,
+				E2CD123428FF4AB3008CCD2D /* DBScheduleEntry+CoreDataProperties.swift */,
+				E2CD123728FF4AB3008CCD2D /* DBTimetable+CoreDataClass.swift */,
+				E2CD123628FF4AB3008CCD2D /* DBTimetable+CoreDataProperties.swift */,
+				E2CD123828FF4AB4008CCD2D /* DBTimetableSchedule+CoreDataClass.swift */,
+				E2CD123928FF4AB4008CCD2D /* DBTimetableSchedule+CoreDataProperties.swift */,
+				E2CD123A28FF4AB4008CCD2D /* GoLondon.xcdatamodeld */,
 			);
 			path = GoLondon_CoreData;
 			sourceTree = "<group>";
@@ -78,6 +107,9 @@
 			dependencies = (
 			);
 			name = GoLondon_CoreData;
+			packageProductDependencies = (
+				E2CD124628FF4B22008CCD2D /* GoLondonSDK */,
+			);
 			productName = GoLondon_CoreData;
 			productReference = E2CD122A28FF4A9C008CCD2D /* GoLondon_CoreData.framework */;
 			productType = "com.apple.product-type.framework";
@@ -93,6 +125,7 @@
 				TargetAttributes = {
 					E2CD122928FF4A9C008CCD2D = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -105,6 +138,9 @@
 				Base,
 			);
 			mainGroup = E2CD122028FF4A9C008CCD2D;
+			packageReferences = (
+				E2CD124528FF4B22008CCD2D /* XCRemoteSwiftPackageReference "GoLondonSDK-Swift" */,
+			);
 			productRefGroup = E2CD122B28FF4A9C008CCD2D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +165,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CD124928FF4C9F008CCD2D /* Persistence.swift in Sources */,
+				E2CD124328FF4AB4008CCD2D /* GoLondon.xcdatamodeld in Sources */,
+				E2CD124128FF4AB4008CCD2D /* DBTimetableSchedule+CoreDataClass.swift in Sources */,
+				E2CD124428FF4AB4008CCD2D /* DBConverter.swift in Sources */,
+				E2CD123F28FF4AB4008CCD2D /* DBTimetable+CoreDataProperties.swift in Sources */,
+				E2CD124228FF4AB4008CCD2D /* DBTimetableSchedule+CoreDataProperties.swift in Sources */,
+				E2CD123D28FF4AB4008CCD2D /* DBScheduleEntry+CoreDataProperties.swift in Sources */,
+				E2CD123E28FF4AB4008CCD2D /* DBScheduleEntry+CoreDataClass.swift in Sources */,
+				E2CD124028FF4AB4008CCD2D /* DBTimetable+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +183,7 @@
 		E2CD122F28FF4A9C008CCD2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -188,7 +234,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -199,6 +247,7 @@
 		E2CD123028FF4A9C008CCD2D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -243,6 +292,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -253,6 +304,8 @@
 		E2CD123228FF4A9C008CCD2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,8 +331,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +343,8 @@
 		E2CD123328FF4A9C008CCD2D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -313,7 +370,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +400,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E2CD124528FF4B22008CCD2D /* XCRemoteSwiftPackageReference "GoLondonSDK-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Tom-Knighton/GoLondonSDK-Swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E2CD124628FF4B22008CCD2D /* GoLondonSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2CD124528FF4B22008CCD2D /* XCRemoteSwiftPackageReference "GoLondonSDK-Swift" */;
+			productName = GoLondonSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		E2CD123A28FF4AB4008CCD2D /* GoLondon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2CD123B28FF4AB4008CCD2D /* GoLondon.xcdatamodel */,
+			);
+			currentVersion = E2CD123B28FF4AB4008CCD2D /* GoLondon.xcdatamodel */;
+			path = GoLondon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E2CD122128FF4A9C008CCD2D /* Project object */;
 }

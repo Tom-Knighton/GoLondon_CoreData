@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "golondonsdk-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Tom-Knighton/GoLondonSDK-Swift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3e3c96a2fd64b750854ef2f1c78032d4ab5b280c"
+      }
+    }
+  ],
+  "version" : 2
+}

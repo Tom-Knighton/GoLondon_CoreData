@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G83" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DBScheduleEntry" representedClassName=".DBScheduleEntry" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="terminatingAt" optional="YES" attributeType="String"/>
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="schedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBTimetableSchedule" inverseName="entries" inverseEntity="DBTimetableSchedule"/>
+    </entity>
+    <entity name="DBTimetable" representedClassName=".DBTimetable" syncable="YES">
+        <attribute name="direction" optional="YES" attributeType="String"/>
+        <attribute name="lineId" optional="YES" attributeType="String"/>
+        <attribute name="stopPointId" optional="YES" attributeType="String"/>
+        <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBTimetableSchedule" inverseName="timetable" inverseEntity="DBTimetableSchedule"/>
+    </entity>
+    <entity name="DBTimetableSchedule" representedClassName=".DBTimetableSchedule" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="towards" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <relationship name="entries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBScheduleEntry" inverseName="schedule" inverseEntity="DBScheduleEntry"/>
+        <relationship name="timetable" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBTimetable" inverseName="schedules" inverseEntity="DBTimetable"/>
+    </entity>
+</model>
