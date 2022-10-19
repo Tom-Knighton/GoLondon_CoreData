@@ -16,9 +16,9 @@ extension DBScheduleEntry {
         return NSFetchRequest<DBScheduleEntry>(entityName: "DBScheduleEntry")
     }
 
-    @NSManaged public var terminatingAt: String?
+    @NSManaged public var terminatingAt: String
     @NSManaged public var id: Int
-    @NSManaged public var time: Date?
+    @NSManaged public var time: Date
     @NSManaged public var schedule: DBTimetableSchedule?
 
 }

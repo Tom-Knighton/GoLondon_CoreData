@@ -16,10 +16,10 @@ extension DBTimetableSchedule {
         return NSFetchRequest<DBTimetableSchedule>(entityName: "DBTimetableSchedule")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var towards: [String]?
+    @NSManaged public var name: String
+    @NSManaged public var towards: [String]
     @NSManaged public var timetable: DBTimetable?
-    @NSManaged public var entries: Set<DBScheduleEntry>?
+    @NSManaged public var entries: Set<DBScheduleEntry>
 
 }
 

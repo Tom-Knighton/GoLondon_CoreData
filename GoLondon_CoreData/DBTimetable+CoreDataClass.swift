@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(DBTimetable)
-public class DBTimetable: NSManagedObject {
+class DBTimetable: NSManagedObject {
 
 }

@@ -15,11 +15,23 @@ extension DBTimetable {
     @nonobjc public class func fetchRequest() -> NSFetchRequest<DBTimetable> {
         return NSFetchRequest<DBTimetable>(entityName: "DBTimetable")
     }
+    
+    @nonobjc public class func findOne(stopPointId: String, lineId: String, direction: String) -> NSFetchRequest<DBTimetable> {
+        let fetch = NSFetchRequest<DBTimetable>()
+        fetch.fetchLimit = 1
+        
+        let predicateStopId = NSPredicate(format: "stopPointId == %@", stopPointId)
+        let predicateLineId = NSPredicate(format: "lineId == %@", lineId)
+        let predicateDirection = NSPredicate(format: "direction == %@", direction)
+        fetch.predicate = NSCompoundPredicate(type: .and, subpredicates: [predicateStopId, predicateLineId, predicateDirection])
+        
+        return fetch
+    }
 
-    @NSManaged public var lineId: String?
-    @NSManaged public var stopPointId: String?
-    @NSManaged public var direction: String?
-    @NSManaged public var schedules: Set<DBTimetableSchedule>?
+    @NSManaged public var lineId: String
+    @NSManaged public var stopPointId: String
+    @NSManaged public var direction: String
+    @NSManaged public var schedules: Set<DBTimetableSchedule>
 
 }
 

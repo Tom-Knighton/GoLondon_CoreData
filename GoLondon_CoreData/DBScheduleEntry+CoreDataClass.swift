@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(DBScheduleEntry)
-public class DBScheduleEntry: NSManagedObject {
+class DBScheduleEntry: NSManagedObject {
 
 }

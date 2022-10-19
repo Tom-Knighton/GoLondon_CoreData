@@ -16,8 +16,8 @@
 		E2CD124228FF4AB4008CCD2D /* DBTimetableSchedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD123928FF4AB4008CCD2D /* DBTimetableSchedule+CoreDataProperties.swift */; };
 		E2CD124328FF4AB4008CCD2D /* GoLondon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2CD123A28FF4AB4008CCD2D /* GoLondon.xcdatamodeld */; };
 		E2CD124428FF4AB4008CCD2D /* DBConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD123C28FF4AB4008CCD2D /* DBConverter.swift */; };
-		E2CD124728FF4B22008CCD2D /* GoLondonSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E2CD124628FF4B22008CCD2D /* GoLondonSDK */; };
 		E2CD124928FF4C9F008CCD2D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD124828FF4C9E008CCD2D /* Persistence.swift */; };
+		E2CD126A2900633C008CCD2D /* GoLondonSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E2CD12692900633C008CCD2D /* GoLondonSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2CD124728FF4B22008CCD2D /* GoLondonSDK in Frameworks */,
+				E2CD126A2900633C008CCD2D /* GoLondonSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +108,7 @@
 			);
 			name = GoLondon_CoreData;
 			packageProductDependencies = (
-				E2CD124628FF4B22008CCD2D /* GoLondonSDK */,
+				E2CD12692900633C008CCD2D /* GoLondonSDK */,
 			);
 			productName = GoLondon_CoreData;
 			productReference = E2CD122A28FF4A9C008CCD2D /* GoLondon_CoreData.framework */;
@@ -139,7 +139,7 @@
 			);
 			mainGroup = E2CD122028FF4A9C008CCD2D;
 			packageReferences = (
-				E2CD124528FF4B22008CCD2D /* XCRemoteSwiftPackageReference "GoLondonSDK-Swift" */,
+				E2CD12682900633C008CCD2D /* XCRemoteSwiftPackageReference "GoLondonSDK-Swift" */,
 			);
 			productRefGroup = E2CD122B28FF4A9C008CCD2D /* Products */;
 			projectDirPath = "";
@@ -402,20 +402,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E2CD124528FF4B22008CCD2D /* XCRemoteSwiftPackageReference "GoLondonSDK-Swift" */ = {
+		E2CD12682900633C008CCD2D /* XCRemoteSwiftPackageReference "GoLondonSDK-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Tom-Knighton/GoLondonSDK-Swift";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E2CD124628FF4B22008CCD2D /* GoLondonSDK */ = {
+		E2CD12692900633C008CCD2D /* GoLondonSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E2CD124528FF4B22008CCD2D /* XCRemoteSwiftPackageReference "GoLondonSDK-Swift" */;
+			package = E2CD12682900633C008CCD2D /* XCRemoteSwiftPackageReference "GoLondonSDK-Swift" */;
 			productName = GoLondonSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
