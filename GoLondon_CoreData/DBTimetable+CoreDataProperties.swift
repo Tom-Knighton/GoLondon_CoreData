@@ -17,7 +17,7 @@ extension DBTimetable {
     }
     
     @nonobjc public class func findOne(stopPointId: String, lineId: String, direction: String) -> NSFetchRequest<DBTimetable> {
-        let fetch = NSFetchRequest<DBTimetable>()
+        let fetch = NSFetchRequest<DBTimetable>(entityName: "DBTimetable")
         fetch.fetchLimit = 1
         
         let predicateStopId = NSPredicate(format: "stopPointId == %@", stopPointId)
